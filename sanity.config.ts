@@ -5,7 +5,7 @@ import { schemaTypes } from "./schemas";
 import Logo from "./components/Logo";
 import StudioNavbar from "./components/StudioNavbar";
 import { myTheme } from "./theme";
-import { getDefaultDocumentNode } from "./structure";
+
 
 export default defineConfig({
   basePath: "/studio",
@@ -15,7 +15,7 @@ export default defineConfig({
   projectId: "54o3nk6f",
   dataset: "production",
 
-  plugins: [deskTool({ defaultDocumentNode: getDefaultDocumentNode }), visionTool()],
+  plugins: [deskTool(), visionTool()],
 
   schema: {
     types: schemaTypes,
