@@ -31,7 +31,7 @@ export default function About({ pageInfo }: Props) {
                 About My <span className="underline decoration-[#F7AB0A]/50">Self</span>
             </h4>
             <h3 className="italic text-2xl">Short n Simple</h3>
-            <p className="text-md capitalize">More info</p>
+            <p className="text-md capitalize">{pageInfo?.backgroundInfomation}</p>
          </div>
     </div>
   );
